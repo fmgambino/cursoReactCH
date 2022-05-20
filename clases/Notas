@@ -1,0 +1,14 @@
+DOCTTYPE: Tipo de Documento que estará leyendo en navegador.
+Buscar MDN documentaci+on API´s
+Buscar caniuse.com documentacion API´s
+SPA: Aplicacion de Sola Pagina.
+NODE JS es un entorno de ejecución de JavaScript. https://nodejs.org/es/download/
+npm, herramienta que incluye con nodejs. Funciona como repositorio. https://npmjs.com/ 
+
+Instalar libreria global para crear app react npm install -g create-react-app no muy recomendada
+Recomendado para crear la app: npx create-react-app primerapp
+
+Documentacion React https://es.reactjs.org/docs/getting-started.htm
+
+OTRA FORMA DE INSTALAR
+ npm create vite@latest appprueba-vite
