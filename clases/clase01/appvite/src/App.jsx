@@ -14,6 +14,7 @@ function App() {
   const [count, modificarCount] = useState(0) // declaro una cont de el destructori del objeto. useState me inicializa una constante
   const [count2, setCount] = useState(0)
   const [date, setDate] = useState(Date ())
+  const [bool, setBool] = useState (true)
 
   //let count = 0;
 
@@ -33,11 +34,11 @@ function App() {
         console.log(count + 1)
   }
  
-/*
+
   const cambiarEstado = () => {
     setBool(!bool)
   }
-*/
+
 
 useEffect(()=>{   
   console.log('addEventListener')
@@ -55,11 +56,11 @@ useEffect(()=>{
   useEffect(()=>{   //Me permite ejecutar eventos en segunda plano
     console.log('renderizado de app 2 una sola vez, despues del montado')
   },[])//ejecuta una sola una vez despues dle primer montado y nunca mas cuando se usa array
-/*
+
   useEffect(()=>{   //Me permite ejecutar eventos en segunda plano
     console.log('solo cuando se modifique el bool')
   },[bool])
-*/
+
   console.log('renderizado de app 4')
   return (
       <>
@@ -75,6 +76,7 @@ useEffect(()=>{
       <p>{count2}</p>
       <p>{date}</p>
       <button id='botonUpdate' onClick={update}> Pintar contador</button>
+      <button id='botonBool' onClick={setBool}> Bool</button>
       </div>
 
 
