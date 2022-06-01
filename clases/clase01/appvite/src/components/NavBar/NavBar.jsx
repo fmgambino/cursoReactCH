@@ -1,14 +1,18 @@
 import React from 'react'
 import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
+import CartWidget from '../CartWidget/CartWidget'
+import LogoNavBar from '../logoNavBar/logoNavBar'
 
 function NavBar() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
   <Container>
+  <LogoNavBar/>
   <Navbar.Brand href="#home">CryptoPlus+</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
+    
       <Nav.Link href="#features">Features</Nav.Link>
       <Nav.Link href="#pricing">Pricing</Nav.Link>
       <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
@@ -26,6 +30,8 @@ function NavBar() {
       </Nav.Link>
     </Nav>
   </Navbar.Collapse>
+ <CartWidget/>
+ 
   </Container>
 </Navbar>
   )

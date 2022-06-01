@@ -40,3 +40,23 @@
 button {
   font-size: calc(10px + 2vmin);
 }
+
+#botonCount{
+  color: antiquewhite;
+  background-color: #282c34;
+  width: 100px;
+  height: 30px;
+  margin: 5px;
+  border: 2px solid rgb(170, 21, 228);
+  border-radius: 40px;
+}
+
+#botonCount:hover{
+  color: rgb(255, 255, 255);
+  background-color: #000000a1;
+  width: 100px;
+  height: 30px;
+  margin: 5px;
+  border: 2px solid rgb(21, 233, 85);
+  border-radius: 40px;
+}
